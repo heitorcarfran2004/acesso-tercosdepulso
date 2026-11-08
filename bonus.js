@@ -33,11 +33,11 @@ var BONUS = (function () {
      Enquanto o login aceitar qualquer e-mail (sem consultar compras), COMPRAS fica vazio e os extras aparecem
      como "Em breve"/"Desbloqueie". Quando o acesso passar a vir do webhook (modelo apps/guias-membros), basta
      pôr em window.COMPRAS a lista de IDs comprados pelo e-mail. */
-  var ID_COMBO = '';   // ← ID do produto "Leve todos" na Wiapy
+  var ID_COMBO = '6af01bfc4fbe72f8a1a42d27';   // ← ID do produto "Leve todos" na Wiapy
   var EXTRAS = [
-    { n: 1, tit: '50 Modelos de Terços de Pescoço', sub: 'Extra da compra', breve: true, ids: [/* ID do bump Pescoço */] },
-    { n: 2, tit: '30 Modelos de Escapulários Artesanais', sub: 'Extra da compra', breve: true, ids: [/* ID do bump Escapulários */] },
-    { n: 3, tit: '25 Modelos de Mini Terços de Chaveiro', sub: 'Extra da compra', breve: true, ids: [/* ID do bump Chaveiro */] },
+    { n: 1, tit: '50 Modelos de Terços de Pescoço', sub: 'Extra da compra', breve: true, ids: ['6af00cfe371815cbeca19cf6', '6af00e0404a3ce9b1128c3a3'] },
+    { n: 2, tit: '30 Modelos de Escapulários Artesanais', sub: 'Extra da compra', breve: true, ids: ['6af00d19b7632434c351abf3', '6af00e1a04a3ce9b1128c416'] },
+    { n: 3, tit: '25 Modelos de Mini Terços de Chaveiro', sub: 'Extra da compra', breve: true, ids: ['6af00d35371815cbeca19e21', '6af00e314fbe72f8a1a3b4e0'] },
     { n: 4, tit: '25 Modelos de Terços para Carro', sub: 'Vem no combo Leve todos', breve: true, ids: [] }
   ];
   function compras() { return (window.COMPRAS || []).map(String); }
